@@ -1,12 +1,12 @@
 # 运行命令
 `python all.py --device cuda:0 --columns contet --model resultModel --xlsx_directory ./excel --directory ./csv --threshold 0.85`
 # 参数说明
-device:运行设备，默认使用GPU0(使用CPU就改为"--device cpu")
-columns:输入的excel列名，默认使用contet列
-model:模型路径
-xlsx_directory:输入文件夹路径默认“./excel”
-directory:输出文件夹路径默认“./csv”
-threshold:相似度计算阈值默认0.85
+device:运行设备，默认使用GPU0(使用CPU就改为"--device cpu")  
+columns:输入的excel列名，默认使用contet列  
+model:模型路径  
+xlsx_directory:输入文件夹路径默认“./excel”  
+directory:输出文件夹路径默认“./csv”  
+threshold:相似度计算阈值默认0.85  
 # 函数解释
 ## all.py 计算相似度文件
 > model = SentenceTransformer(args.model).to(args.device)  
